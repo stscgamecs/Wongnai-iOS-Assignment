@@ -9,8 +9,8 @@
 import Foundation
 
 class ApiService {
-    var page = 1
-    func getApi(_ completion: @escaping (Result<Model, Error>) -> Void) {
+    
+    func getApi(page:Int,_ completion: @escaping (Result<Model, Error>) -> Void) {
         guard let url = URL(string: "https://api.500px.com/v1/photos?feature=popular&page=\(page)") else {
             return
         }

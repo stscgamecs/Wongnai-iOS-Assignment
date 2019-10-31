@@ -8,6 +8,7 @@
 
 import UIKit
 
+var imageCache: [String: UIImage] = [:]
 class TableViewMenuListCell: UITableViewCell {
     @IBOutlet weak var imageShow: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
@@ -35,9 +36,12 @@ class TableViewMenuListCell: UITableViewCell {
         guard let urlImage = Model.image_url.first else {
             return
         }
-        if let url = URL(string: urlImage) {
+        if let image = imageCache[urlImage] {
+          imageShow.image = image
+        }else if let url = URL(string: urlImage) {
             if let data = try? Data(contentsOf: url) {
                 if let image = UIImage(data: data) {
+                    imageCache[urlImage] = image
                     self.imageShow.image = image
                 }
             }

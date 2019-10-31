@@ -11,32 +11,31 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var dataList: [Photo] = []
-    
+    var page = 1
     @IBOutlet weak var loadingView: UIActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        getData()
+        getData(numberPage: page)
     }
     
-    func getData() {
+    func getData(numberPage:Int) {
         loadingView.isHidden = false
         let api = ApiService()
-        api.getApi { [weak self ] result in
+        api.getApi(page: numberPage) { [weak self ] result in
             switch result {
             case .success(let data):
-                self?.dataList = data.photos
+                self?.dataList.append(contentsOf: data.photos) 
                 self?.loadingView.isHidden = true
                 self?.tableView.reloadData()
-                api.page += 1
             case .failure(let error):
                 let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
                 let action = UIAlertAction(title: "OK", style: .destructive)
                 alert.addAction(action)
-                self?.loadingView.isHidden = true
+                 self?.loadingView.isHidden = true
                 self?.present(alert, animated: true)
             }
         }
-    } 
+    }
 }
 
 extension ViewController: UITableViewDataSource {
@@ -50,16 +49,16 @@ extension ViewController: UITableViewDataSource {
         cell.setUi(Model: dataList[indexPath.row])
         return cell
     }
-    
-     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-       if indexPath.row == dataList.count - 1 && loadingView.isHidden {
-         getData()
-       }
-     }
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if indexPath.row == dataList.count - 1 && loadingView.isHidden {
+            let countPage = page + 1
+            getData(numberPage: countPage)
+        }
+    }
 }
-extension ViewController: UICollectionViewDelegateFlowLayout {
-  func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-    let width = collectionView.frame.size.width / 2.0
+extension ViewController: UITableViewDelegate {
+  func UITableView(_ tableView: UITableView, layout tableViewLayout: UITableViewCell, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    let width = tableView.frame.size.width / 2.0
     let height = width * 1.5
     return CGSize(width: width, height: height)
   }
