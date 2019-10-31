@@ -20,11 +20,6 @@ class TableViewMenuListCell: UITableViewCell {
         // Initialization code
     }
     
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        // Configure the view for the selected state
-    }
-    
     func setUi(Model:Photo) {
          let votesCount = String(format: "%ld %@",
                                  locale: Locale.current,
@@ -38,7 +33,7 @@ class TableViewMenuListCell: UITableViewCell {
         }
         if let image = imageCache[urlImage] {
           imageShow.image = image
-        }else if let url = URL(string: urlImage) {
+        } else if let url = URL(string: urlImage) {
             if let data = try? Data(contentsOf: url) {
                 if let image = UIImage(data: data) {
                     imageCache[urlImage] = image

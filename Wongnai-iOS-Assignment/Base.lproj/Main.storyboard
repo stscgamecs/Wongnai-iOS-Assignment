@@ -33,7 +33,7 @@
                                                             <rect key="frame" x="0.0" y="20" width="414" height="100"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="oIf-17-HNo">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="182" height="100"/>
                                                                     <subviews>
                                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fSa-LD-gIc">
                                                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -43,19 +43,16 @@
                                                                             </constraints>
                                                                         </imageView>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6g7-AS-jvQ">
-                                                                            <rect key="frame" x="100" y="0.0" width="200" height="47"/>
+                                                                            <rect key="frame" x="100" y="0.0" width="82" height="47"/>
                                                                             <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dsadasasdasddsadasdasdasdasdsadasdasdasdasdsadaas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AbF-9c-DH2">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="26.5"/>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AbF-9c-DH2">
+                                                                                    <rect key="frame" x="0.0" y="0.0" width="82" height="26.5"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDs-8C-RXR">
-                                                                                    <rect key="frame" x="0.0" y="26.5" width="200" height="20.5"/>
-                                                                                    <constraints>
-                                                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="hF1-NM-xZH"/>
-                                                                                    </constraints>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discription" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dDs-8C-RXR">
+                                                                                    <rect key="frame" x="0.0" y="26.5" width="82" height="20.5"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
