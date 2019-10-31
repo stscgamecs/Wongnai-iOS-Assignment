@@ -20,7 +20,9 @@ class ApiService {
         
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             if let urlError = error {
-                completion(Result.failure(urlError))
+                DispatchQueue.main.async {
+                    completion(Result.failure(urlError))
+                }
             }
             else if let data = data, let response = response as? HTTPURLResponse {
                 DispatchQueue.main.async {

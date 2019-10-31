@@ -32,6 +32,8 @@ class ViewController: UIViewController {
                 let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
                 let action = UIAlertAction(title: "OK", style: .destructive)
                 alert.addAction(action)
+                self?.loadingView.isHidden = true
+                self?.present(alert, animated: true)
             }
         }
     } 
