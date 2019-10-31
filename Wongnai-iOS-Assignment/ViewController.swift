@@ -39,10 +39,12 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITableViewDataSource {
+extension ViewController: UITableViewDataSource,UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataList.count
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCell", for: indexPath) as? TableViewMenuListCell else {
             return UITableViewCell()
@@ -50,8 +52,7 @@ extension ViewController: UITableViewDataSource {
         cell.setUi(Model: dataList[indexPath.row])
         return cell
     }
-}
-extension ViewController: UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if indexPath.row == dataList.count - 1 && loadingView.isHidden {
             let countPage = page + 1

@@ -23,7 +23,7 @@ class TableViewMenuListCell: UITableViewCell {
     func setUi(Model:Photo) {
          let votesCount = String(format: "%ld %@",
                                  locale: Locale.current,
-                                 Model.positive_votes_count,"")
+                                 Model.positive_votes_count, "")
         nameLabel.text = Model.name
         discriptionLabel.text = Model.description
         voteLabel.text = votesCount
