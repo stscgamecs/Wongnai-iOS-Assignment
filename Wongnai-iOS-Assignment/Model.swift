@@ -16,12 +16,12 @@ struct Model: Codable {
 // MARK: - Photo
 struct Photo: Codable {
     let description, name: String
-    let votesCount: Int
+    let positive_votes_count: Int
     let image_url: [String]
     enum CodingKeys: String, CodingKey {
         case description
         case name
-        case votesCount = "votes_count"
+        case positive_votes_count
         case image_url
     }
 }
