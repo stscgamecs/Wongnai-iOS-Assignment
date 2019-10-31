@@ -27,9 +27,11 @@ class ViewController: UIViewController {
                 self?.dataList = data.photos
                 self?.loadingView.isHidden = true
                 self?.tableView.reloadData()
-                api.page = 2
-            case .failure(_):
-                print(Error.self)
+                api.page += 1
+            case .failure(let error):
+                let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)
+                let action = UIAlertAction(title: "OK", style: .destructive)
+                alert.addAction(action)
             }
         }
     } 
@@ -45,5 +47,18 @@ extension ViewController: UITableViewDataSource {
         }
         cell.setUi(Model: dataList[indexPath.row])
         return cell
-    } 
+    }
+    
+     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+       if indexPath.row == dataList.count - 1 && loadingView.isHidden {
+         getData()
+       }
+     }
+}
+extension ViewController: UICollectionViewDelegateFlowLayout {
+  func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    let width = collectionView.frame.size.width / 2.0
+    let height = width * 1.5
+    return CGSize(width: width, height: height)
+  }
 }
