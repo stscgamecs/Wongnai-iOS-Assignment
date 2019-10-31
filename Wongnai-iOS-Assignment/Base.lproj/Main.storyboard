@@ -112,9 +112,14 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="NXR-UL-qK3"/>
                                 </connections>
                             </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="CuM-zP-RFk">
+                                <rect key="frame" x="197" y="438" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="CuM-zP-RFk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Czl-Tg-hVo"/>
+                            <constraint firstItem="CuM-zP-RFk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="JKK-cd-dQR"/>
                             <constraint firstItem="crS-aJ-GTJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UEd-yM-VXc"/>
                             <constraint firstItem="crS-aJ-GTJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="VSD-mQ-R3h"/>
                             <constraint firstItem="crS-aJ-GTJ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="po9-pQ-lbH"/>
@@ -123,6 +128,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="loadingView" destination="CuM-zP-RFk" id="EKy-6X-drW"/>
                         <outlet property="tableView" destination="crS-aJ-GTJ" id="WR0-8P-18I"/>
                     </connections>
                 </viewController>

@@ -11,17 +11,21 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var dataList: [Photo] = []
+    
+    @IBOutlet weak var loadingView: UIActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
         getData()
     }
     
-    func getData(){
+    func getData() {
+        loadingView.isHidden = false
         let api = ApiService()
         api.getApi { [weak self ] result in
             switch result {
             case .success(let data):
                 self?.dataList = data.photos
+                self?.loadingView.isHidden = true
                 self?.tableView.reloadData()
                 api.page = 2
             case .failure(_):
@@ -35,15 +39,11 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return dataList.count
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "tableViewCell", for: indexPath) as? TableViewMenuListCell else {
             return UITableViewCell()
         }
         cell.setUi(Model: dataList[indexPath.row])
-        
         return cell
-    }
-    
-    
+    } 
 }

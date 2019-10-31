@@ -24,12 +24,18 @@ class TableViewMenuListCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setUi(Model:Photo){
-         let result = String(format: "%ld %@", locale: Locale.current, Model.votesCount, "views")
+    func setUi(Model:Photo) {
+         let votesCount = String(format: "%ld %@",
+                                 locale: Locale.current,
+                                 Model.votesCount,"")
         nameLabel.text = Model.name
         discriptionLabel.text = Model.description
-        voteLabel.text = result
-        if let url = URL(string: Model.images.first!.url){
+        voteLabel.text = votesCount
+        
+        guard let urlImage = Model.image_url.first else {
+            return
+        }
+        if let url = URL(string: urlImage) {
             if let data = try? Data(contentsOf: url) {
                 if let image = UIImage(data: data) {
                     self.imageShow.image = image

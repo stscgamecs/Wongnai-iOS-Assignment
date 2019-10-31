@@ -17,15 +17,11 @@ struct Model: Codable {
 struct Photo: Codable {
     let description, name: String
     let votesCount: Int
-    let images: [Image]
+    let image_url: [String]
     enum CodingKeys: String, CodingKey {
         case description
         case name
         case votesCount = "votes_count"
-        case images
+        case image_url
     }
-}
-// MARK: - Image
-struct Image: Codable {
-    let url: String
 }

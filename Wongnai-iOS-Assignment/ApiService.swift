@@ -7,8 +7,7 @@
 //
 
 import Foundation
-import Alamofire
-import SwiftyJSON
+
 class ApiService {
     var page = 1
     func getApi(_ completion: @escaping (Result<Model, Error>) -> Void) {
@@ -20,17 +19,16 @@ class ApiService {
         request.httpMethod = "GET"
         
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
-            if let _ = error {
-                print("error")
+            if let urlError = error {
+                completion(Result.failure(urlError))
             }
             else if let data = data, let response = response as? HTTPURLResponse {
                 DispatchQueue.main.async {
                     if response.statusCode == 200 {
                         do {
-                            let mobileList: Model = try JSONDecoder().decode(Model.self, from: data)
-                            completion(Result.success(mobileList))
+                            let tableList: Model = try JSONDecoder().decode(Model.self, from: data)
+                            completion(Result.success(tableList))
                         } catch(let error) {
-                            print(error)
                             completion(Result.failure(error))
                         }
                     }
