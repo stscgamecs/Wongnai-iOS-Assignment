@@ -1,0 +1,743 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		032F7F5EAC79BBA5766ADD46 /* Pods_Wongnai_iOS_AssignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5305108AFC10770DAE608DD /* Pods_Wongnai_iOS_AssignmentTests.framework */; };
+		0D6847CE7E952A787896A92D /* Pods_Wongnai_iOS_Assignment_Wongnai_iOS_AssignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44391289E14C9065CD53F8FC /* Pods_Wongnai_iOS_Assignment_Wongnai_iOS_AssignmentUITests.framework */; };
+		A6502384FD894B2D705DC193 /* Pods_Wongnai_iOS_Assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206F788193A25042C6606BA3 /* Pods_Wongnai_iOS_Assignment.framework */; };
+		E466C3DB2369FF1600158E8A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E466C3DA2369FF1600158E8A /* Model.swift */; };
+		E4FBB8F22369CBE300A3F448 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FBB8F12369CBE300A3F448 /* AppDelegate.swift */; };
+		E4FBB8F42369CBE300A3F448 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FBB8F32369CBE300A3F448 /* SceneDelegate.swift */; };
+		E4FBB8F62369CBE300A3F448 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FBB8F52369CBE300A3F448 /* ViewController.swift */; };
+		E4FBB8F92369CBE300A3F448 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4FBB8F72369CBE300A3F448 /* Main.storyboard */; };
+		E4FBB8FB2369CBE500A3F448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4FBB8FA2369CBE500A3F448 /* Assets.xcassets */; };
+		E4FBB9092369CBE500A3F448 /* Wongnai_iOS_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FBB9082369CBE500A3F448 /* Wongnai_iOS_AssignmentTests.swift */; };
+		E4FBB9142369CBE500A3F448 /* Wongnai_iOS_AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FBB9132369CBE500A3F448 /* Wongnai_iOS_AssignmentUITests.swift */; };
+		E4FBB9222369CC3600A3F448 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FBB9212369CC3600A3F448 /* ApiService.swift */; };
+		E4FBB9242369D62400A3F448 /* TableViewMenuListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FBB9232369D62400A3F448 /* TableViewMenuListCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4FBB9052369CBE500A3F448 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4FBB8E62369CBE300A3F448 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4FBB8ED2369CBE300A3F448;
+			remoteInfo = "Wongnai-iOS-Assignment";
+		};
+		E4FBB9102369CBE500A3F448 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4FBB8E62369CBE300A3F448 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4FBB8ED2369CBE300A3F448;
+			remoteInfo = "Wongnai-iOS-Assignment";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15531E356E7F75596C1CE1FC /* Pods-Wongnai-iOS-Assignment-Wongnai-iOS-AssignmentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wongnai-iOS-Assignment-Wongnai-iOS-AssignmentUITests.release.xcconfig"; path = "Target Support Files/Pods-Wongnai-iOS-Assignment-Wongnai-iOS-AssignmentUITests/Pods-Wongnai-iOS-Assignment-Wongnai-iOS-AssignmentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1AE88084AFFAB32B8A9FCF60 /* Pods-Wongnai-iOS-AssignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wongnai-iOS-AssignmentTests.release.xcconfig"; path = "Target Support Files/Pods-Wongnai-iOS-AssignmentTests/Pods-Wongnai-iOS-AssignmentTests.release.xcconfig"; sourceTree = "<group>"; };
+		206F788193A25042C6606BA3 /* Pods_Wongnai_iOS_Assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wongnai_iOS_Assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		257841235E008C10B7F9A7A1 /* Pods-Wongnai-iOS-Assignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wongnai-iOS-Assignment.release.xcconfig"; path = "Target Support Files/Pods-Wongnai-iOS-Assignment/Pods-Wongnai-iOS-Assignment.release.xcconfig"; sourceTree = "<group>"; };
+		44391289E14C9065CD53F8FC /* Pods_Wongnai_iOS_Assignment_Wongnai_iOS_AssignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wongnai_iOS_Assignment_Wongnai_iOS_AssignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89413D19B7A6C4D832FC233B /* Pods-Wongnai-iOS-Assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wongnai-iOS-Assignment.debug.xcconfig"; path = "Target Support Files/Pods-Wongnai-iOS-Assignment/Pods-Wongnai-iOS-Assignment.debug.xcconfig"; sourceTree = "<group>"; };
+		B5305108AFC10770DAE608DD /* Pods_Wongnai_iOS_AssignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wongnai_iOS_AssignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E466C3DA2369FF1600158E8A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		E4FBB8EE2369CBE300A3F448 /* Wongnai-iOS-Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wongnai-iOS-Assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4FBB8F12369CBE300A3F448 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E4FBB8F32369CBE300A3F448 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E4FBB8F52369CBE300A3F448 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E4FBB8F82369CBE300A3F448 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E4FBB8FA2369CBE500A3F448 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4FBB8FF2369CBE500A3F448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4FBB9042369CBE500A3F448 /* Wongnai-iOS-AssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wongnai-iOS-AssignmentTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4FBB9082369CBE500A3F448 /* Wongnai_iOS_AssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wongnai_iOS_AssignmentTests.swift; sourceTree = "<group>"; };
+		E4FBB90A2369CBE500A3F448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4FBB90F2369CBE500A3F448 /* Wongnai-iOS-AssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wongnai-iOS-AssignmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4FBB9132369CBE500A3F448 /* Wongnai_iOS_AssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wongnai_iOS_AssignmentUITests.swift; sourceTree = "<group>"; };
+		E4FBB9152369CBE500A3F448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4FBB9212369CC3600A3F448 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		E4FBB9232369D62400A3F448 /* TableViewMenuListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewMenuListCell.swift; sourceTree = "<group>"; };
+		EBE4265D70BEBB96871A1D98 /* Pods-Wongnai-iOS-AssignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wongnai-iOS-AssignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-Wongnai-iOS-AssignmentTests/Pods-Wongnai-iOS-AssignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA6B9E602CB0823A9BDE3ED6 /* Pods-Wongnai-iOS-Assignment-Wongnai-iOS-AssignmentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wongnai-iOS-Assignment-Wongnai-iOS-AssignmentUITests.debug.xcconfig"; path = "Target Support Files/Pods-Wongnai-iOS-Assignment-Wongnai-iOS-AssignmentUITests/Pods-Wongnai-iOS-Assignment-Wongnai-iOS-AssignmentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4FBB8EB2369CBE300A3F448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6502384FD894B2D705DC193 /* Pods_Wongnai_iOS_Assignment.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4FBB9012369CBE500A3F448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032F7F5EAC79BBA5766ADD46 /* Pods_Wongnai_iOS_AssignmentTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4FBB90C2369CBE500A3F448 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D6847CE7E952A787896A92D /* Pods_Wongnai_iOS_Assignment_Wongnai_iOS_AssignmentUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D0DA12319225B796B182047 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				206F788193A25042C6606BA3 /* Pods_Wongnai_iOS_Assignment.framework */,
+				44391289E14C9065CD53F8FC /* Pods_Wongnai_iOS_Assignment_Wongnai_iOS_AssignmentUITests.framework */,
+				B5305108AFC10770DAE608DD /* Pods_Wongnai_iOS_AssignmentTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB8BB70FE59FBB824B107375 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89413D19B7A6C4D832FC233B /* Pods-Wongnai-iOS-Assignment.debug.xcconfig */,
+				257841235E008C10B7F9A7A1 /* Pods-Wongnai-iOS-Assignment.release.xcconfig */,
+				FA6B9E602CB0823A9BDE3ED6 /* Pods-Wongnai-iOS-Assignment-Wongnai-iOS-AssignmentUITests.debug.xcconfig */,
+				15531E356E7F75596C1CE1FC /* Pods-Wongnai-iOS-Assignment-Wongnai-iOS-AssignmentUITests.release.xcconfig */,
+				EBE4265D70BEBB96871A1D98 /* Pods-Wongnai-iOS-AssignmentTests.debug.xcconfig */,
+				1AE88084AFFAB32B8A9FCF60 /* Pods-Wongnai-iOS-AssignmentTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E4FBB8E52369CBE300A3F448 = {
+			isa = PBXGroup;
+			children = (
+				E4FBB8F02369CBE300A3F448 /* Wongnai-iOS-Assignment */,
+				E4FBB9072369CBE500A3F448 /* Wongnai-iOS-AssignmentTests */,
+				E4FBB9122369CBE500A3F448 /* Wongnai-iOS-AssignmentUITests */,
+				E4FBB8EF2369CBE300A3F448 /* Products */,
+				BB8BB70FE59FBB824B107375 /* Pods */,
+				2D0DA12319225B796B182047 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E4FBB8EF2369CBE300A3F448 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4FBB8EE2369CBE300A3F448 /* Wongnai-iOS-Assignment.app */,
+				E4FBB9042369CBE500A3F448 /* Wongnai-iOS-AssignmentTests.xctest */,
+				E4FBB90F2369CBE500A3F448 /* Wongnai-iOS-AssignmentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4FBB8F02369CBE300A3F448 /* Wongnai-iOS-Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				E4FBB9232369D62400A3F448 /* TableViewMenuListCell.swift */,
+				E466C3DA2369FF1600158E8A /* Model.swift */,
+				E4FBB9212369CC3600A3F448 /* ApiService.swift */,
+				E4FBB8F72369CBE300A3F448 /* Main.storyboard */,
+				E4FBB8F52369CBE300A3F448 /* ViewController.swift */,
+				E4FBB8F12369CBE300A3F448 /* AppDelegate.swift */,
+				E4FBB8F32369CBE300A3F448 /* SceneDelegate.swift */,
+				E4FBB8FA2369CBE500A3F448 /* Assets.xcassets */,
+				E4FBB8FF2369CBE500A3F448 /* Info.plist */,
+			);
+			path = "Wongnai-iOS-Assignment";
+			sourceTree = "<group>";
+		};
+		E4FBB9072369CBE500A3F448 /* Wongnai-iOS-AssignmentTests */ = {
+			isa = PBXGroup;
+			children = (
+				E4FBB9082369CBE500A3F448 /* Wongnai_iOS_AssignmentTests.swift */,
+				E4FBB90A2369CBE500A3F448 /* Info.plist */,
+			);
+			path = "Wongnai-iOS-AssignmentTests";
+			sourceTree = "<group>";
+		};
+		E4FBB9122369CBE500A3F448 /* Wongnai-iOS-AssignmentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E4FBB9132369CBE500A3F448 /* Wongnai_iOS_AssignmentUITests.swift */,
+				E4FBB9152369CBE500A3F448 /* Info.plist */,
+			);
+			path = "Wongnai-iOS-AssignmentUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4FBB8ED2369CBE300A3F448 /* Wongnai-iOS-Assignment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4FBB9182369CBE500A3F448 /* Build configuration list for PBXNativeTarget "Wongnai-iOS-Assignment" */;
+			buildPhases = (
+				05E28C47778AD32D674BC9E4 /* [CP] Check Pods Manifest.lock */,
+				E4FBB8EA2369CBE300A3F448 /* Sources */,
+				E4FBB8EB2369CBE300A3F448 /* Frameworks */,
+				E4FBB8EC2369CBE300A3F448 /* Resources */,
+				1410A2ADBDC8ACF4AAFD8774 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wongnai-iOS-Assignment";
+			productName = "Wongnai-iOS-Assignment";
+			productReference = E4FBB8EE2369CBE300A3F448 /* Wongnai-iOS-Assignment.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E4FBB9032369CBE500A3F448 /* Wongnai-iOS-AssignmentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4FBB91B2369CBE500A3F448 /* Build configuration list for PBXNativeTarget "Wongnai-iOS-AssignmentTests" */;
+			buildPhases = (
+				F47DB95939EFD48345867B1D /* [CP] Check Pods Manifest.lock */,
+				E4FBB9002369CBE500A3F448 /* Sources */,
+				E4FBB9012369CBE500A3F448 /* Frameworks */,
+				E4FBB9022369CBE500A3F448 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4FBB9062369CBE500A3F448 /* PBXTargetDependency */,
+			);
+			name = "Wongnai-iOS-AssignmentTests";
+			productName = "Wongnai-iOS-AssignmentTests";
+			productReference = E4FBB9042369CBE500A3F448 /* Wongnai-iOS-AssignmentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E4FBB90E2369CBE500A3F448 /* Wongnai-iOS-AssignmentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4FBB91E2369CBE500A3F448 /* Build configuration list for PBXNativeTarget "Wongnai-iOS-AssignmentUITests" */;
+			buildPhases = (
+				D89F187F644E1F1CC17C8636 /* [CP] Check Pods Manifest.lock */,
+				E4FBB90B2369CBE500A3F448 /* Sources */,
+				E4FBB90C2369CBE500A3F448 /* Frameworks */,
+				E4FBB90D2369CBE500A3F448 /* Resources */,
+				7A19CAC2C10C900AA1801D29 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4FBB9112369CBE500A3F448 /* PBXTargetDependency */,
+			);
+			name = "Wongnai-iOS-AssignmentUITests";
+			productName = "Wongnai-iOS-AssignmentUITests";
+			productReference = E4FBB90F2369CBE500A3F448 /* Wongnai-iOS-AssignmentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4FBB8E62369CBE300A3F448 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = Z94me;
+				TargetAttributes = {
+					E4FBB8ED2369CBE300A3F448 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					E4FBB9032369CBE500A3F448 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = E4FBB8ED2369CBE300A3F448;
+					};
+					E4FBB90E2369CBE500A3F448 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = E4FBB8ED2369CBE300A3F448;
+					};
+				};
+			};
+			buildConfigurationList = E4FBB8E92369CBE300A3F448 /* Build configuration list for PBXProject "Wongnai-iOS-Assignment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E4FBB8E52369CBE300A3F448;
+			productRefGroup = E4FBB8EF2369CBE300A3F448 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4FBB8ED2369CBE300A3F448 /* Wongnai-iOS-Assignment */,
+				E4FBB9032369CBE500A3F448 /* Wongnai-iOS-AssignmentTests */,
+				E4FBB90E2369CBE500A3F448 /* Wongnai-iOS-AssignmentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4FBB8EC2369CBE300A3F448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4FBB8FB2369CBE500A3F448 /* Assets.xcassets in Resources */,
+				E4FBB8F92369CBE300A3F448 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4FBB9022369CBE500A3F448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4FBB90D2369CBE500A3F448 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05E28C47778AD32D674BC9E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wongnai-iOS-Assignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1410A2ADBDC8ACF4AAFD8774 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wongnai-iOS-Assignment/Pods-Wongnai-iOS-Assignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wongnai-iOS-Assignment/Pods-Wongnai-iOS-Assignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wongnai-iOS-Assignment/Pods-Wongnai-iOS-Assignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A19CAC2C10C900AA1801D29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wongnai-iOS-Assignment-Wongnai-iOS-AssignmentUITests/Pods-Wongnai-iOS-Assignment-Wongnai-iOS-AssignmentUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Wongnai-iOS-Assignment-Wongnai-iOS-AssignmentUITests/Pods-Wongnai-iOS-Assignment-Wongnai-iOS-AssignmentUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Wongnai-iOS-Assignment-Wongnai-iOS-AssignmentUITests/Pods-Wongnai-iOS-Assignment-Wongnai-iOS-AssignmentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D89F187F644E1F1CC17C8636 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wongnai-iOS-Assignment-Wongnai-iOS-AssignmentUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F47DB95939EFD48345867B1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Wongnai-iOS-AssignmentTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4FBB8EA2369CBE300A3F448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4FBB9242369D62400A3F448 /* TableViewMenuListCell.swift in Sources */,
+				E4FBB8F62369CBE300A3F448 /* ViewController.swift in Sources */,
+				E4FBB8F22369CBE300A3F448 /* AppDelegate.swift in Sources */,
+				E466C3DB2369FF1600158E8A /* Model.swift in Sources */,
+				E4FBB9222369CC3600A3F448 /* ApiService.swift in Sources */,
+				E4FBB8F42369CBE300A3F448 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4FBB9002369CBE500A3F448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4FBB9092369CBE500A3F448 /* Wongnai_iOS_AssignmentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4FBB90B2369CBE500A3F448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4FBB9142369CBE500A3F448 /* Wongnai_iOS_AssignmentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4FBB9062369CBE500A3F448 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4FBB8ED2369CBE300A3F448 /* Wongnai-iOS-Assignment */;
+			targetProxy = E4FBB9052369CBE500A3F448 /* PBXContainerItemProxy */;
+		};
+		E4FBB9112369CBE500A3F448 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4FBB8ED2369CBE300A3F448 /* Wongnai-iOS-Assignment */;
+			targetProxy = E4FBB9102369CBE500A3F448 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E4FBB8F72369CBE300A3F448 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4FBB8F82369CBE300A3F448 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E4FBB9162369CBE500A3F448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E4FBB9172369CBE500A3F448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4FBB9192369CBE500A3F448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89413D19B7A6C4D832FC233B /* Pods-Wongnai-iOS-Assignment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Wongnai-iOS-Assignment/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Z94me.Wongnai-iOS-Assignment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E4FBB91A2369CBE500A3F448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 257841235E008C10B7F9A7A1 /* Pods-Wongnai-iOS-Assignment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Wongnai-iOS-Assignment/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Z94me.Wongnai-iOS-Assignment";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E4FBB91C2369CBE500A3F448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBE4265D70BEBB96871A1D98 /* Pods-Wongnai-iOS-AssignmentTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Wongnai-iOS-AssignmentTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Z94me.Wongnai-iOS-AssignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wongnai-iOS-Assignment.app/Wongnai-iOS-Assignment";
+			};
+			name = Debug;
+		};
+		E4FBB91D2369CBE500A3F448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AE88084AFFAB32B8A9FCF60 /* Pods-Wongnai-iOS-AssignmentTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Wongnai-iOS-AssignmentTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Z94me.Wongnai-iOS-AssignmentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wongnai-iOS-Assignment.app/Wongnai-iOS-Assignment";
+			};
+			name = Release;
+		};
+		E4FBB91F2369CBE500A3F448 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA6B9E602CB0823A9BDE3ED6 /* Pods-Wongnai-iOS-Assignment-Wongnai-iOS-AssignmentUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Wongnai-iOS-AssignmentUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Z94me.Wongnai-iOS-AssignmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Wongnai-iOS-Assignment";
+			};
+			name = Debug;
+		};
+		E4FBB9202369CBE500A3F448 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15531E356E7F75596C1CE1FC /* Pods-Wongnai-iOS-Assignment-Wongnai-iOS-AssignmentUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Wongnai-iOS-AssignmentUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Z94me.Wongnai-iOS-AssignmentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Wongnai-iOS-Assignment";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4FBB8E92369CBE300A3F448 /* Build configuration list for PBXProject "Wongnai-iOS-Assignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4FBB9162369CBE500A3F448 /* Debug */,
+				E4FBB9172369CBE500A3F448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4FBB9182369CBE500A3F448 /* Build configuration list for PBXNativeTarget "Wongnai-iOS-Assignment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4FBB9192369CBE500A3F448 /* Debug */,
+				E4FBB91A2369CBE500A3F448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4FBB91B2369CBE500A3F448 /* Build configuration list for PBXNativeTarget "Wongnai-iOS-AssignmentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4FBB91C2369CBE500A3F448 /* Debug */,
+				E4FBB91D2369CBE500A3F448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4FBB91E2369CBE500A3F448 /* Build configuration list for PBXNativeTarget "Wongnai-iOS-AssignmentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4FBB91F2369CBE500A3F448 /* Debug */,
+				E4FBB9202369CBE500A3F448 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4FBB8E62369CBE300A3F448 /* Project object */;
+}
