@@ -11,12 +11,10 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var dataList: [Photo] = []
-    var page = 1
     override func viewDidLoad() {
         super.viewDidLoad()
         getData()
     }
-    
     
     func getData(){
         let api = ApiService()
@@ -25,13 +23,12 @@ class ViewController: UIViewController {
             case .success(let data):
                 self?.dataList = data.photos
                 self?.tableView.reloadData()
+                api.page = 2
             case .failure(_):
                 print(Error.self)
             }
         }
-    }
-    
-    
+    } 
 }
 
 extension ViewController: UITableViewDataSource {

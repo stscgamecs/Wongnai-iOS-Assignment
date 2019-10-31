@@ -25,17 +25,16 @@ class TableViewMenuListCell: UITableViewCell {
     }
     
     func setUi(Model:Photo){
+         let result = String(format: "%ld %@", locale: Locale.current, Model.votesCount, "views")
         nameLabel.text = Model.name
         discriptionLabel.text = Model.description
-        voteLabel.text = "\(Model.votesCount)"
+        voteLabel.text = result
         if let url = URL(string: Model.images.first!.url){
             if let data = try? Data(contentsOf: url) {
                 if let image = UIImage(data: data) {
                     self.imageShow.image = image
-                    
                 }
             }
-            
         }
     }
 }

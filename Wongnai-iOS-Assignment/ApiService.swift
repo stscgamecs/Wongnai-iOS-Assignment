@@ -10,8 +10,9 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 class ApiService {
+    var page = 1
     func getApi(_ completion: @escaping (Result<Model, Error>) -> Void) {
-        guard let url = URL(string: "https://api.500px.com/v1/photos?feature=popular&page=1") else {
+        guard let url = URL(string: "https://api.500px.com/v1/photos?feature=popular&page=\(page)") else {
             return
         }
         
